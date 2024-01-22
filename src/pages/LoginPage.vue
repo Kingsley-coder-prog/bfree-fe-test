@@ -108,7 +108,8 @@
                   </div>
                 </div>
 
-                <button class="sign-btn"><span>Sign In Now</span></button>
+                <!-- <a href="/userpage"><button class="sign-btn"><span>Sign In Now</span></button></a> -->
+                <a class="sign-btn" href="/userpage"><span>Sign In Now</span></a>
               </div>
               <div class="input-frame"></div>
             </div>

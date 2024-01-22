@@ -1,14 +1,18 @@
 <template>
   <div>
-    <LoginPage />
-    <RouterView />
+    <!-- <login-page></login-page> -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import LoginPage from "./views/LoginPage.vue";
+// import LoginPage from "./views/login/LoginPage.vue";
 
-export default {};
+// export default {
+//   components: {
+//     LoginPage
+//   }
+// };
 </script>
 
 <style scoped></style>
