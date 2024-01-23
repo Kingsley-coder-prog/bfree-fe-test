@@ -191,6 +191,8 @@
             </div>
           </div>
         </div>
+
+        <!-- USER_SECTION -->
         <div class="user-section">
           <div class="user-top">
             <div class="user-top-left">
@@ -423,7 +425,7 @@ PTP Option"
             <div class="user-bottom-lower">
               <div class="first-item">
                 <p class="loan-number">12345678</p>
-                <a class="user-name" href="#">Esther Bode</a>
+                <a class="user-name" href="/userdetails">Esther Bode</a>
                 <a class="partners" href="#"><span>Fairmoney</span></a>
                 <p class="agent-text">BFR00001</p>
                 <p class="call-bot">call_bot</p>
@@ -440,7 +442,7 @@ PTP Option"
 
               <div class="second-item">
                 <p class="loan-number">12345678</p>
-                <a class="user-name" href="#">Bilikis Olabisi</a>
+                <a class="user-name" href="/userdetails">Bilikis Olabisi</a>
                 <a class="partners" href="#"><span>QuickCheck</span></a>
                 <p class="agent-text">BFR00001</p>
                 <p class="call-bot">call_bot</p>
@@ -457,7 +459,7 @@ PTP Option"
 
               <div class="third-item">
                 <p class="loan-number">12345678</p>
-                <a class="user-name" href="#">Bilikis Olabisi </a>
+                <a class="user-name" href="/userdetails">Bilikis Olabisi </a>
                 <a class="partners" href="#"><span>QuickCheck</span></a>
                 <p class="agent-text">BFR00001</p>
                 <p class="call-bot">call_bot</p>
@@ -474,7 +476,7 @@ PTP Option"
 
               <div class="fourth-item">
                 <p class="loan-number">12345678</p>
-                <a class="user-name" href="#">Bilikis Olabisi </a>
+                <a class="user-name" href="/userdetails">Bilikis Olabisi </a>
                 <a class="partners" href="#"><span>QuickCheck</span></a>
                 <p class="agent-text">BFR00001</p>
                 <p class="call-bot">call_bot</p>
@@ -491,7 +493,7 @@ PTP Option"
 
               <div class="fifth-item">
                 <p class="loan-number">12345678</p>
-                <a class="user-name" href="#">Bilikis Olabisi </a>
+                <a class="user-name" href="/userdetails">Bilikis Olabisi </a>
                 <a class="partners" href="#"><span>QuickCheck</span></a>
                 <p class="agent-text">BFR00001</p>
                 <p class="call-bot">call_bot</p>
@@ -508,7 +510,7 @@ PTP Option"
 
               <div class="sixth-item">
                 <p class="loan-number">12345678</p>
-                <a class="user-name" href="#">Bilikis Olabisi </a>
+                <a class="user-name" href="/userdetails">Bilikis Olabisi </a>
                 <a class="partners" href="#"><span>QuickCheck</span></a>
                 <p class="agent-text">BFR00001</p>
                 <p class="call-bot">call_bot</p>
@@ -525,7 +527,7 @@ PTP Option"
 
               <div class="seventh-item">
                 <p class="loan-number">12345678</p>
-                <a class="user-name" href="#">Bilikis Olabisi </a>
+                <a class="user-name" href="/userdetails">Bilikis Olabisi </a>
                 <a class="partners" href="#"><span>QuickCheck</span></a>
                 <p class="agent-text">BFR00001</p>
                 <p class="call-bot">call_bot</p>
@@ -565,15 +567,6 @@ export default {};
   grid-template-rows: 112px 1fr;
   background: #008fbf;
 }
-
-/* .navbar-menu .logo-section {
-  display: inline-flex;
-  padding: 48px 111.034px 24px 32px;
-  align-items: center;
-  background: #008fbf;
-  width: 272px;
-  height: 112px;
-} */
 
 .logo-icon {
   width: 128.966px;
@@ -844,7 +837,7 @@ export default {};
 
 .user-area {
   display: grid;
-  grid-template-rows: 40px 1fr;
+  grid-template-rows: 104px 1fr;
   padding: 15px 20px;
   gap: 24px;
 }
@@ -975,6 +968,184 @@ export default {};
   height: 24px;
 }
 
+/* USER_TOP */
+.user-section {
+  display: flex;
+  width: 1104px;
+  height: 848px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.user-top {
+  display: grid;
+  grid-template-columns: 1fr 318px;
+  width: 1104px;
+  height: 326px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+}
+
+.user-top-left {
+  padding: 40px 0px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.left-first {
+  display: flex;
+  gap: 24px;
+  padding-right: 24px;
+}
+
+.filter-box-1,
+.filter-box-2,
+.filter-box-3 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.filter-box-4 {
+  display: inline-flex;
+  padding: 12px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 4px;
+  border: 1px solid #eaeaea;
+  background: #f7f7f7;
+}
+
+.filter-box-1,
+.filter-box-2,
+.filter-box-3 p {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 12px */
+  text-transform: uppercase;
+}
+
+.filter-drop-1,
+.filter-drop-2,
+.filter-drop-3 {
+  display: flex;
+  padding: 13px 8px;
+
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px; */
+}
+
+.left-second {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.line-1,
+.line-2 {
+  width: 746px;
+  height: 1.5px;
+  background: #eaeaea;
+}
+
+.middle-items {
+  display: flex;
+  padding-right: 24px;
+  gap: 6px;
+}
+
+.mode-1,
+.mode-2,
+.mode-3 {
+  display: flex;
+  gap: 6px;
+}
+
+.first-line,
+.second-line {
+  width: 1.5px;
+  height: 32px;
+  background: #eaeaea;
+}
+
+.pending,
+.complete,
+.all,
+.instalment,
+.non-instalment,
+.reached,
+.unreached {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.pending,
+.complete,
+.all,
+.instalment,
+.non-instalment,
+.reached,
+.unreached p {
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* .pending-icon,
+.complete-icon,
+.all-icon,
+.instal-icon,
+.reached,
+.unreached,
+.non-instal-icon {
+  width: 16px;
+  height: 16px;
+} */
+
+.user-top-right {
+  display: inline-flex;
+  padding: 40px 40px 40px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background: #f0fbff;
+}
+
+.right-first {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.right-second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
 /* USER_BOTTOM_HEADER */
 .user-bottom-header {
   display: flex;
@@ -1003,21 +1174,52 @@ export default {};
   line-height: 100%; /* 12px */
 }
 
+.local-id {
+  width: 47px;
+  height: 12px;
+}
+
+.name {
+  width: 53px;
+  height: 12px;
+}
+
+.tags {
+  width: 28px;
+  height: 12px;
+}
+
+.agent {
+  width: 38px;
+  height: 12px;
+}
+
+.channel {
+  width: 51px;
+  height: 12px;
+}
+
+.amount {
+  width: 96px;
+  height: 12px;
+}
+
+.enter-date {
+  width: 64px;
+  height: 12px;
+}
+
+.actions {
+  width: 45px;
+  height: 12px;
+}
+
 .name,
 .amount {
   display: inline-flex;
   align-items: center;
   gap: 8px;
 }
-
-/* .name p {
-  color: #fff;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%; 
-} */
 
 .name-icon,
 .amount-icon {
@@ -1047,7 +1249,7 @@ export default {};
   flex-shrink: 0;
   /* margin: 0 auto; */
   margin: 0 16px;
-  padding: 0px 22px 0px 25px;
+  padding: 21px 16px 31px 24px;
   background: #fff;
 }
 
@@ -1062,7 +1264,7 @@ export default {};
   flex-shrink: 0;
   /* margin: 0 auto; */
   margin: 0 16px;
-  padding: 0px 22px 0px 25px;
+  padding: 21px 16px 31px 24px;
   background: #f0fbff;
 }
 
@@ -1107,7 +1309,24 @@ export default {};
   line-height: 100%; /* 12px */
 }
 
+.call-bot {
+  width: 47px;
+  height: 12px;
+}
+
+.agent-text {
+  width: 72px;
+  height: 14px;
+}
+
+.amounting {
+  width: 43px;
+  height: 14px;
+}
+
 .neo-date {
+  width: 70px;
+  height: 28px;
   color: #000;
   font-family: Montserrat;
   font-size: 12px;

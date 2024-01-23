@@ -335,6 +335,11 @@ export default {};
   text-align: center;
   position: absolute;
   top: 32.3%;
+  background: #fff;
+
+  padding: 0px 16px;
+  align-items: center;
+  gap: 8px;
 }
 
 .id-label-2 {
@@ -342,6 +347,11 @@ export default {};
   text-align: center;
   position: absolute;
   top: 43.3%;
+  background: #fff;
+
+  padding: 0px 16px;
+  align-items: center;
+  gap: 8px;
 }
 
 .id-label-1 p,
