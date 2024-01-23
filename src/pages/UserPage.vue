@@ -200,43 +200,44 @@
                 <div class="filter-box-1">
                   <p>Filter by Country</p>
                   <div class="filter-drop-1">
-                    <input type="search" id="site-search" placeholder="Filter by country" />
-                    <span class="chevron">
-                      <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 1L5 5L1 1" stroke="#8E8E8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </span>
+                    <div class="inner">
+                      <input type="search" id="site-search" placeholder="Filter by country" />
+                      <span class="chevron">
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 1L5 5L1 1" stroke="#8E8E8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                    </div>
                   </div>
                 </div>
                 <div class="filter-box-2">
                   <p>Filter by Partner</p>
                   <div class="filter-drop-2">
-                    <input type="search" id="site-search" placeholder="Filter by partner" />
-                    <span class="chevron">
-                      <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 1L5 5L1 1" stroke="#8E8E8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </span>
+                    <div class="inner">
+                      <input type="search" id="site-search" placeholder="Filter by partner" />
+                      <span class="chevron">
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 1L5 5L1 1" stroke="#8E8E8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                    </div>
                   </div>
                 </div>
                 <div class="filter-box-3">
                   <p>Filter by Agent</p>
                   <div class="filter-drop-3">
-                    <input type="search" id="site-search" placeholder="Filter by Agent" />
-                    <span class="chevron">
-                      <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 1L5 5L1 1" stroke="#8E8E8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </span>
+                    <div class="inner">
+                      <input type="search" id="site-search" placeholder="Filter by Agent" />
+                      <span class="chevron">
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 1L5 5L1 1" stroke="#8E8E8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                    </div>
                   </div>
                 </div>
                 <div class="filter-box-4">
-                  <input
-                    type="search"
-                    id="site-search"
-                    placeholder="Sort by
-PTP Option"
-                  />
+                  <p>Sort by PTP Option</p>
                   <span class="down-arrow">
                     <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M11.4211 0H0.578826C0.0657525 0 -0.195625 0.619978 0.17224 0.98809L5.5934 6.4129C5.81605 6.6357 6.18392 6.6357 6.40667 6.4129L11.8278 0.98809C12.1956 0.619978 11.9342 0 11.4211 0Z" fill="#008FBF" />
@@ -996,8 +997,6 @@ export default {};
 
 .left-first {
   display: flex;
-  gap: 24px;
-  padding-right: 24px;
 }
 
 .filter-box-1,
@@ -1020,6 +1019,28 @@ export default {};
   background: #f7f7f7;
 }
 
+.filter-box-4 p {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 15.6px */
+  text-transform: uppercase;
+}
+
+.filter-box-4 .down-arrow {
+  display: flex;
+  width: 61px;
+  height: 36px;
+  padding: 0px 17px 0px 32px;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+}
+
 .filter-box-1,
 .filter-box-2,
 .filter-box-3 p {
@@ -1037,18 +1058,45 @@ export default {};
 .filter-drop-3 {
   display: flex;
   padding: 13px 8px;
-
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 8px;
   border-radius: 4px;
   border: 1px solid #eaeaea;
   background: #fff;
+}
 
-  /* display: flex;
+.inner {
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px; */
+  gap: 16px;
+}
+
+.inner input {
+  border: none;
+}
+
+.inner input:focus {
+  outline: none;
+}
+.inner input::placeholder {
+  width: 120px;
+  color: #8e8e8e;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 14px */
+}
+
+.chevron {
+  display: flex;
+  align-items: center;
+  width: 8px;
+  height: 8px;
+  /* transform: rotate(-90deg); */
 }
 
 .left-second {
@@ -1111,16 +1159,50 @@ export default {};
   line-height: normal;
 }
 
-/* .pending-icon,
-.complete-icon,
-.all-icon,
-.instal-icon,
-.reached,
-.unreached,
-.non-instal-icon {
-  width: 16px;
-  height: 16px;
-} */
+.left-third {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 48px;
+  width: 368px;
+}
+
+.left-third a,
+.right-second a {
+  color: #666;
+  text-align: right;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.filter-search-btn {
+  display: flex;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #00a4db;
+
+  /* Button Shadow/Primary */
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.filter-search-btn span,
+.search-btn span {
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+}
 
 .user-top-right {
   display: inline-flex;
@@ -1139,11 +1221,91 @@ export default {};
   gap: 24px;
 }
 
+.right-first p {
+  color: #006384;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+  text-transform: uppercase;
+}
+
+.search-filter,
+.search-query {
+  display: flex;
+  width: 262px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 41px;
+  border-radius: 4px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+}
+
+.search-input {
+  display: flex;
+  width: 136px;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.search-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.search-input input,
+.query-input input {
+  border: none;
+}
+
+.search-input input:focus,
+.query-input input:focus {
+  outline: none;
+}
+
+.search-input input::placeholder {
+  width: 112px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 114.286% */
+}
+
+.dropdown-icon {
+  display: flex;
+  align-items: center;
+  width: 12.008px;
+  height: 6.58px;
+  flex-shrink: 0;
+}
+
 .right-second {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
+}
+
+.search-btn {
+  display: flex;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #009b47;
+
+  /* Button Shadow/Primary */
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.15);
+  border: none;
 }
 
 /* USER_BOTTOM_HEADER */
