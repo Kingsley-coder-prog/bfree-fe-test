@@ -191,203 +191,104 @@
             </div>
           </div>
         </div>
-        <div class="user-section">
-          <div class="user-top">
-            <div class="user-top-left">
-              <div class="left-first">
-                <div class="filter-box-1">
-                  <p>Filter by Country</p>
-                  <div class="filter-drop-1">
-                    <input type="search" id="site-search" placeholder="Filter by country" />
-                    <span class="chevron">
-                      <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 1L5 5L1 1" stroke="#8E8E8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-                <div class="filter-box-2">
-                  <p>Filter by Partner</p>
-                  <div class="filter-drop-2">
-                    <input type="search" id="site-search" placeholder="Filter by partner" />
-                    <span class="chevron">
-                      <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 1L5 5L1 1" stroke="#8E8E8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-                <div class="filter-box-3">
-                  <p>Filter by Agent</p>
-                  <div class="filter-drop-3">
-                    <input type="search" id="site-search" placeholder="Filter by Agent" />
-                    <span class="chevron">
-                      <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 1L5 5L1 1" stroke="#8E8E8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-                <div class="filter-box-4">
-                  <input
-                    type="search"
-                    id="site-search"
-                    placeholder="Sort by
-PTP Option"
-                  />
-                  <span class="down-arrow">
-                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.4211 0H0.578826C0.0657525 0 -0.195625 0.619978 0.17224 0.98809L5.5934 6.4129C5.81605 6.6357 6.18392 6.6357 6.40667 6.4129L11.8278 0.98809C12.1956 0.619978 11.9342 0 11.4211 0Z" fill="#008FBF" />
-                    </svg>
-                  </span>
-                </div>
-              </div>
 
-              <div class="left-second">
-                <div class="line-1"></div>
-
-                <div class="middle-items">
-                  <div class="mode-1">
-                    <div class="pending">
-                      <span class="pending-icon">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="8" cy="8" r="7.5" fill="white" stroke="#00A4DB" />
-                          <circle cx="8.00001" cy="8.00001" r="5.81818" fill="#00A4DB" />
-                        </svg>
-                      </span>
-                      <p>Pending</p>
-                    </div>
-                    <div class="complete">
-                      <span class="complete-icon">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="8" cy="8" r="7.5" fill="white" stroke="#BABABA" />
-                          <circle cx="8.00001" cy="8.00001" r="5.81818" fill="#EAEAEA" />
-                        </svg>
-                      </span>
-                      <p>Completed</p>
-                    </div>
-                    <div class="all">
-                      <span class="all-icon">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="8" cy="8" r="7.5" fill="white" stroke="#BABABA" />
-                          <circle cx="8.00001" cy="8.00001" r="5.81818" fill="#EAEAEA" />
-                        </svg>
-                      </span>
-                      <p>All</p>
-                    </div>
-                  </div>
-
-                  <div class="first-line"></div>
-
-                  <div class="mode-2">
-                    <div class="instalment">
-                      <span class="instal-icon">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="8" cy="8" r="7.5" fill="white" stroke="#00A4DB" />
-                          <circle cx="8.00001" cy="8.00001" r="5.81818" fill="#00A4DB" />
-                        </svg>
-                      </span>
-                      <p>Instalment</p>
-                    </div>
-
-                    <div class="non-instalment">
-                      <span class="non-instal-icon">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="8" cy="8" r="7.5" fill="white" stroke="#BABABA" />
-                          <circle cx="8" cy="8.00001" r="5.81818" fill="#EAEAEA" />
-                        </svg>
-                      </span>
-                      <p>Without Instalment</p>
-                    </div>
-
-                    <div class="all">
-                      <span class="all-icon">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="8" cy="8" r="7.5" fill="white" stroke="#BABABA" />
-                          <circle cx="8.00001" cy="8.00001" r="5.81818" fill="#EAEAEA" />
-                        </svg>
-                      </span>
-                      <p>All</p>
-                    </div>
-                  </div>
-
-                  <div class="second-line"></div>
-
-                  <div class="mode-3">
-                    <div class="reached">
-                      <span class="reached-icon">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="8" cy="8" r="7.5" fill="white" stroke="#BABABA" />
-                          <circle cx="8.00001" cy="8.00001" r="5.81818" fill="#EAEAEA" />
-                        </svg>
-                      </span>
-                      <p>Reached</p>
-                    </div>
-
-                    <div class="unreached">
-                      <span class="unreached-icon">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="8" cy="8" r="7.5" fill="white" stroke="#00A4DB" />
-                          <circle cx="8.00001" cy="8.00001" r="5.81818" fill="#00A4DB" />
-                        </svg>
-                      </span>
-                      <p>Unreached</p>
-                    </div>
-
-                    <div class="all">
-                      <span class="all-icon">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="8" cy="8" r="7.5" fill="white" stroke="#BABABA" />
-                          <circle cx="8.00001" cy="8.00001" r="5.81818" fill="#EAEAEA" />
-                        </svg>
-                      </span>
-                      <p>All</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="line-2"></div>
-              </div>
-
-              <div class="left-third">
-                <a href="#">Clear filters</a>
-                <button class="filter-search-btn"><span>Proceed with filter search</span></button>
-              </div>
+        <!-- USER DETAILS SECTION -->
+        <div class="detail-section">
+          <div class="detail-container">
+            <div class="detail-header">
+              <p>General Details</p>
+              <span class="up-arrow">
+                <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 9L9 1L17 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <!-- <span class="close"></span> -->
             </div>
 
-            <div class="user-top-right">
-              <div class="right-first">
-                <p>Search here</p>
-                <div class="search-filter">
-                  <div class="search-input">
-                    <span class="search-icon">
-                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.3442 15.1295L12.2132 11.0646C13.295 9.88931 13.9597 8.33496 13.9597 6.62455C13.9591 2.96568 10.9454 0 7.22755 0C3.50968 0 0.495972 2.96568 0.495972 6.62455C0.495972 10.2834 3.50968 13.2491 7.22755 13.2491C8.83393 13.2491 10.3073 12.6935 11.4646 11.7698L15.6115 15.8507C15.8136 16.0498 16.1416 16.0498 16.3437 15.8507C16.5462 15.6517 16.5462 15.3286 16.3442 15.1295ZM7.22755 12.2299C4.08182 12.2299 1.53172 9.72029 1.53172 6.62455C1.53172 3.52881 4.08182 1.01923 7.22755 1.01923C10.3733 1.01923 12.9234 3.52881 12.9234 6.62455C12.9234 9.72029 10.3733 12.2299 7.22755 12.2299Z" fill="black" />
-                      </svg>
-                    </span>
-                    <input type="search" id="site-search" placeholder="Search filter" />
+            <div class="detail-body">
+              <div class="left-body">
+                <div class="left-body-header">
+                  <p>Loan Details</p>
+                  <div class="fairmoney">
+                    <img class="fairmoney-logo" src="../assets/images/fairmoney.png" alt="fairmoney-logo" />
+                    <p>FairMoney</p>
                   </div>
-                  <span class="dropdown-icon">
-                    <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.9248 0.709991H1.07519C0.561768 0.709991 0.300215 1.32997 0.668327 1.69808L6.09313 7.12289C6.31594 7.34569 6.68405 7.34569 6.90695 7.12289L12.3318 1.69808C12.6998 1.32997 12.4382 0.709991 11.9248 0.709991Z" fill="black" />
-                    </svg>
-                  </span>
                 </div>
-                <div class="search-query">
-                  <div class="query-input">
-                    <input type="search" id="site-search" placeholder="Search Query" />
-                  </div>
+                <div class="left-body-main">
+                  <p>Loan ID: <span></span></p>
+                  <p>Loan Instalment ID: <span></span></p>
+                  <p>Days Late: <span>32 days</span></p>
+                  <p>Due Date: <span>Feb 22, 2021 (184 days late)</span></p>
+                  <p>Original Amount to pay: <span>₦5,000.00</span></p>
+                  <p>Late Fees: <span>₦750.00</span></p>
+                  <p>Original Interest to pay: <span>₦1,500.00</span></p>
+                  <p>Amount + Fees: <span>₦3,830.00</span></p>
+                  <p class="green-text">Amount Previously Paid By Customer: <span>₦3,420.00</span></p>
+                  <p>NO. of Instalments: <span>1</span></p>
+                  <p class="green-text">Amount + Total Instalments: <span>₦3,420.00</span></p>
+                  <p>Amount Paid: <span>₦3,420.00</span></p>
+                  <p>Customer Discount: <span>₦0.00</span></p>
+                  <p>Balance Remaining: <span>₦410.00</span></p>
+                  <p class="green-text">Partner Account Number: <span>8385436228</span></p>
+                  <p class="green-text">Partner Account Name: <span>Stanbic Fairmoney Account</span></p>
+                  <p class="green-text">Partner Bank Name: <span>Stanbic IBTC</span></p>
+                  <p>Enter Date: <span>Oct 02, 2021</span></p>
                 </div>
               </div>
 
-              <div class="right-second">
-                <a href="#">Clear filters</a>
-                <button class="search-btn"><span>Search Now</span></button>
+              <div class="right-body">
+                <div class="right-body-header">
+                  <p>Personal Details</p>
+                </div>
+                <div class="right-body-main">
+                  <div class="upper-main">
+                    <p>User Name: <span> Esther Bode</span></p>
+                    <p>User ID: <span>85814024-b9d7-4ebe-a81b-2e54ac91645c</span></p>
+                    <p>User Telephone: <span>2348000000000</span></p>
+                    <p>Application Telephone: <span>2348000000000</span></p>
+                    <p>LGA: <span></span></p>
+                    <p>State: <span>Ogun</span></p>
+                    <p>BVN: <span></span></p>
+                    <p>BVN Telephone: <span></span></p>
+                    <p>Guarantor Name: <span> John Ini</span></p>
+                    <p>Guarantor Telephone: <span>2348000000000</span></p>
+                    <p>Guarantor Relationship: <span></span></p>
+                  </div>
+                  <div class="lower-main">
+                    <div class="dnd-status">
+                      <p>DND STATUS</p>
+                      <button class="toggle-btn">
+                        <svg width="60" height="40" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect y="12" width="56" height="16" rx="8" fill="#00A4DB" />
+                          <g filter="url(#filter0_d_1_1331)">
+                            <circle cx="40" cy="20" r="16" fill="#00A4DB" />
+                          </g>
+                          <defs>
+                            <filter id="filter0_d_1_1331" x="20" y="0" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset />
+                              <feGaussianBlur stdDeviation="2" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1331" />
+                              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1331" result="shape" />
+                            </filter>
+                          </defs>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="reason">
+                      <div class="reason-box">
+                        <p>Reason</p>
+                      </div>
+                      <p>Customer cleared loan</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="user-bottom"></div>
         </div>
       </div>
     </div>
@@ -682,7 +583,7 @@ export default {};
 
 .user-area {
   display: grid;
-  grid-template-rows: 40px 1fr;
+  grid-template-rows: 104px 1fr;
   padding: 15px 20px;
   gap: 24px;
 }
@@ -811,5 +712,161 @@ export default {};
 .admin-name .arrow-icon {
   width: 24px;
   height: 24px;
+}
+
+/* User Details */
+.detail-section {
+  width: 1104px;
+  height: 840px;
+  flex-shrink: 0;
+  border-radius: 0px 24px 0px 0px;
+  background: #fff;
+}
+
+.detail-header {
+  display: inline-flex;
+  height: 96px;
+  padding: 0px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 818px;
+  flex-shrink: 0;
+  background: #00a4db;
+}
+
+.detail-header p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 20px */
+}
+
+.up-arrow {
+  width: 8px;
+  height: 16px;
+  /* transform: rotate(90deg); */
+}
+
+.detail-container {
+  display: grid;
+  grid-template-rows: 96px 1fr;
+}
+
+.detail-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.left-body {
+  width: 528px;
+  height: 729px;
+  flex-shrink: 0;
+  border: 1px solid #eaeaea;
+  background: #f7f7f7;
+}
+
+.left-body-header {
+  display: inline-flex;
+  padding: 24px 32px 16px 40px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 195px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+}
+
+.left-body-header p,
+.right-body-header p {
+  color: #00a4db;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 18px */
+}
+
+.fairmoney {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.fairmoney img {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  background:
+    url("../assets/images/fairmoney.png"),
+    lightgray 50% / cover no-repeat;
+}
+
+.fairmoney p {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 18px */
+}
+
+.left-body-main {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin: 24px 13px 12px 40px;
+}
+
+.left-body-main span,
+.upper-main span {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.green-text {
+  color: #009b47;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.green-text span {
+  color: #009b47;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.right-body-header {
+  display: flex;
+  width: 528px;
+  height: 80px;
+  padding: 35px 337px 27px 40px;
+  align-items: center;
+  flex-shrink: 0;
+  border: 1px solid #eaeaea;
+  background: #fff;
+}
+
+.upper-main {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 454px;
+  height: 418px;
+  margin: 24px 34px 8px 40px;
 }
 </style>
