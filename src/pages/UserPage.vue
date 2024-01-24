@@ -551,7 +551,24 @@
 </template>
 
 <script>
-export default {};
+import Users from "../User";
+
+export default {
+  name: "UserPage",
+  data() {
+    return {
+      users: [],
+      error: ""
+    };
+  },
+  async created() {
+    try {
+      this.users = await Users.getUsers();
+    } catch (err) {
+      this.error = err.message;
+    }
+  }
+};
 </script>
 
 <style scoped>
