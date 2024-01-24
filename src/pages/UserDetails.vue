@@ -202,7 +202,11 @@
                   <path d="M1 9L9 1L17 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </span>
-              <!-- <span class="close"></span> -->
+              <span class="close">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 0C7.17733 0 0 7.17733 0 16C0 24.8227 7.17733 32 16 32C24.8227 32 32 24.8227 32 16C32 7.17733 24.8227 0 16 0ZM21.892 20.0067C22.4133 20.528 22.4133 21.3707 21.892 21.892C21.632 22.152 21.2907 22.2827 20.9493 22.2827C20.608 22.2827 20.2667 22.152 20.0067 21.892L16 17.8853L11.9933 21.892C11.7333 22.152 11.392 22.2827 11.0507 22.2827C10.7093 22.2827 10.368 22.152 10.108 21.892C9.58667 21.3707 9.58667 20.528 10.108 20.0067L14.1147 16L10.108 11.9933C9.58667 11.472 9.58667 10.6293 10.108 10.108C10.6293 9.58667 11.472 9.58667 11.9933 10.108L16 14.1147L20.0067 10.108C20.528 9.58667 21.3707 9.58667 21.892 10.108C22.4133 10.6293 22.4133 11.472 21.892 11.9933L17.8853 16L21.892 20.0067Z" fill="black" />
+                </svg>
+              </span>
             </div>
 
             <div class="detail-body">
@@ -724,6 +728,7 @@ export default {};
 }
 
 .detail-header {
+  position: relative;
   display: inline-flex;
   height: 96px;
   padding: 0px 40px;
@@ -732,6 +737,16 @@ export default {};
   gap: 818px;
   flex-shrink: 0;
   background: #00a4db;
+}
+
+.close {
+  position: absolute;
+  top: -20%;
+  right: 0%;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  fill: #000;
 }
 
 .detail-header p {
@@ -744,9 +759,10 @@ export default {};
 }
 
 .up-arrow {
-  width: 8px;
+  width: 16px;
   height: 16px;
-  /* transform: rotate(90deg); */
+  display: flex;
+  align-items: center;
 }
 
 .detail-container {
@@ -761,8 +777,12 @@ export default {};
 }
 
 .left-body {
-  width: 528px;
-  height: 729px;
+  flex-shrink: 0;
+  border: 1px solid #eaeaea;
+  background: #f7f7f7;
+}
+
+.right-body {
   flex-shrink: 0;
   border: 1px solid #eaeaea;
   background: #f7f7f7;
@@ -773,13 +793,13 @@ export default {};
   padding: 24px 32px 16px 40px;
   justify-content: flex-end;
   align-items: center;
+  width: 100%;
   gap: 195px;
   border: 1px solid #eaeaea;
   background: #fff;
 }
 
-.left-body-header p,
-.right-body-header p {
+.left-body-header p {
   color: #00a4db;
   font-family: Montserrat;
   font-size: 18px;
@@ -851,13 +871,21 @@ export default {};
 
 .right-body-header {
   display: flex;
-  width: 528px;
-  height: 80px;
+
   padding: 35px 337px 27px 40px;
   align-items: center;
   flex-shrink: 0;
   border: 1px solid #eaeaea;
   background: #fff;
+}
+
+.right-body-header p {
+  color: #00a4db;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 18px */
 }
 
 .upper-main {
@@ -868,5 +896,62 @@ export default {};
   width: 454px;
   height: 418px;
   margin: 24px 34px 8px 40px;
+}
+
+.lower-main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 24px 34px 8px 40px;
+}
+
+.dnd-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.dnd-status p {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.toggle-btn {
+  width: 56px;
+  height: 32px;
+  border: none;
+  background: transparent;
+}
+
+.reason {
+  display: inline-flex;
+  padding-right: 183px;
+  align-items: center;
+  gap: 24px;
+  background: #eaeaea;
+}
+
+.reason-box {
+  display: flex;
+  height: 56px;
+  padding: 18px 14px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eaeaea;
+  background: #f7f7f7;
+}
+
+.reason p {
+  color: #666;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* margin: 17.5px 24px 53px 40px; */
 }
 </style>
