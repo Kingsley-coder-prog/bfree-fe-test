@@ -221,22 +221,54 @@
                 <div class="left-body-main">
                   <p>Loan ID: <span></span></p>
                   <p>Loan Instalment ID: <span></span></p>
-                  <p>Days Late: <span>32 days</span></p>
-                  <p>Due Date: <span>Feb 22, 2021 (184 days late)</span></p>
-                  <p>Original Amount to pay: <span>₦5,000.00</span></p>
-                  <p>Late Fees: <span>₦750.00</span></p>
-                  <p>Original Interest to pay: <span>₦1,500.00</span></p>
-                  <p>Amount + Fees: <span>₦3,830.00</span></p>
-                  <p class="green-text">Amount Previously Paid By Customer: <span>₦3,420.00</span></p>
-                  <p>NO. of Instalments: <span>1</span></p>
-                  <p class="green-text">Amount + Total Instalments: <span>₦3,420.00</span></p>
-                  <p>Amount Paid: <span>₦3,420.00</span></p>
-                  <p>Customer Discount: <span>₦0.00</span></p>
-                  <p>Balance Remaining: <span>₦410.00</span></p>
-                  <p class="green-text">Partner Account Number: <span>8385436228</span></p>
-                  <p class="green-text">Partner Account Name: <span>Stanbic Fairmoney Account</span></p>
-                  <p class="green-text">Partner Bank Name: <span>Stanbic IBTC</span></p>
-                  <p>Enter Date: <span>Oct 02, 2021</span></p>
+                  <p>
+                    Days Late: <span>{{ user.daysLate }}</span>
+                  </p>
+                  <p>
+                    Due Date: <span>{{ user.dueDate }}</span>
+                  </p>
+                  <p>
+                    Original Amount to pay: <span>₦{{ user.originalAmountToPay }}</span>
+                  </p>
+                  <p>
+                    Late Fees: <span>₦{{ user.lateFees }}</span>
+                  </p>
+                  <p>
+                    Original Interest to pay: <span>₦{{ user.originalInterestToPay }}</span>
+                  </p>
+                  <p>
+                    Amount + Fees: <span>₦{{ user.amountPlusFees }}</span>
+                  </p>
+                  <p class="green-text">
+                    Amount Previously Paid By Customer: <span>₦{{ user.amountPreviouslyPaidByCustomer }}</span>
+                  </p>
+                  <p>
+                    NO. of Instalments: <span>{{ user.numberOfInstalments }}</span>
+                  </p>
+                  <p class="green-text">
+                    Amount + Total Instalments: <span>₦{{ user.amountPlusTotalInstalments }}</span>
+                  </p>
+                  <p>
+                    Amount Paid: <span>₦{{ user.amountPaid }}</span>
+                  </p>
+                  <p>
+                    Customer Discount: <span>₦{{ user.customerDiscount }}</span>
+                  </p>
+                  <p>
+                    Balance Remaining: <span>₦{{ user.balanceRemaining }}</span>
+                  </p>
+                  <p class="green-text">
+                    Partner Account Number: <span>{{ user.partnerAccountNumber }}</span>
+                  </p>
+                  <p class="green-text">
+                    Partner Account Name: <span>{{ user.partnerAccountName }}</span>
+                  </p>
+                  <p class="green-text">
+                    Partner Bank Name: <span>{{ user.partnerBankName }}</span>
+                  </p>
+                  <p>
+                    Enter Date: <span>{{ user.enterDate }}</span>
+                  </p>
                 </div>
               </div>
 
@@ -246,16 +278,34 @@
                 </div>
                 <div class="right-body-main">
                   <div class="upper-main">
-                    <p>User Name: <span> Esther Bode</span></p>
+                    <p>
+                      User Name: <span>{{ user.name }}</span>
+                    </p>
                     <p>User ID: <span>85814024-b9d7-4ebe-a81b-2e54ac91645c</span></p>
-                    <p>User Telephone: <span>2348000000000</span></p>
-                    <p>Application Telephone: <span>2348000000000</span></p>
-                    <p>LGA: <span></span></p>
-                    <p>State: <span>Ogun</span></p>
+                    <p>
+                      User Telephone: <span>{{ user.userTelephone }}</span>
+                    </p>
+                    <p>
+                      Application Telephone: <span>{{ user.applicationTelephone }}</span>
+                    </p>
+
+                    <p>
+                      Address: <span>{{ user.address }}</span>
+                    </p>
+                    <p>
+                      LGA: <span>{{ user.lga }}</span>
+                    </p>
+                    <p>
+                      State: <span>{{ user.state }}</span>
+                    </p>
                     <p>BVN: <span></span></p>
                     <p>BVN Telephone: <span></span></p>
-                    <p>Guarantor Name: <span> John Ini</span></p>
-                    <p>Guarantor Telephone: <span>2348000000000</span></p>
+                    <p>
+                      Guarantor Name: <span>{{ user.guarantorName }}</span>
+                    </p>
+                    <p>
+                      Guarantor Telephone: <span>{{ user.guarantorTelephone }}</span>
+                    </p>
                     <p>Guarantor Relationship: <span></span></p>
                   </div>
                   <div class="lower-main">
@@ -284,7 +334,7 @@
                     </div>
                     <div class="reason">
                       <div class="reason-box">
-                        <p>Reason</p>
+                        <p class="reason-text">Reason</p>
                       </div>
                       <p>Customer cleared loan</p>
                     </div>
@@ -300,7 +350,33 @@
 </template>
 
 <script>
-export default {};
+import Users from "../User";
+
+export default {
+  name: "UserDetails",
+  data() {
+    return {
+      user: {}
+      // error: ""
+      // name,
+      // partner,
+      // agent,
+      // enterDate
+    };
+  },
+  async mounted() {
+    try {
+      console.log(this.$route.params.id);
+      this.user = await Users.getUser(this.$route.params.id);
+
+      console.log(this.user);
+      console.log("Hello people");
+    } catch (err) {
+      this.error = err.message;
+      console.log(this.error);
+    }
+  }
+};
 </script>
 
 <style scoped>
@@ -670,9 +746,7 @@ export default {};
   height: 40px;
   border-radius: 4px;
   border: 1px solid #f7f7f7;
-  background:
-    url("../assets/images/admin"),
-    lightgray 50% / cover no-repeat;
+  background: url("../assets/images/admin"), lightgray 50% / cover no-repeat;
 }
 
 .admin-name {
@@ -819,9 +893,7 @@ export default {};
   width: 30px;
   height: 30px;
   flex-shrink: 0;
-  background:
-    url("../assets/images/fairmoney.png"),
-    lightgray 50% / cover no-repeat;
+  background: url("../assets/images/fairmoney.png"), lightgray 50% / cover no-repeat;
 }
 
 .fairmoney p {
@@ -894,7 +966,7 @@ export default {};
   align-items: flex-start;
   gap: 16px;
   width: 454px;
-  height: 418px;
+  /* height: 418px; */
   margin: 24px 34px 8px 40px;
 }
 
@@ -943,6 +1015,16 @@ export default {};
   align-items: center;
   border: 1px solid #eaeaea;
   background: #f7f7f7;
+}
+
+.reason-text {
+  color: #00a4db !important;
+  text-align: center !important;
+  font-family: Montserrat !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
 }
 
 .reason p {

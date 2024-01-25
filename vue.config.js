@@ -1,7 +1,7 @@
-import user from "./src/pages/User.js";
+// import user from "./src/pages/User.js";
 
 module.exports = {
   devServer: {
-    proxy: user
+    proxy: "http://localhost:3000"
   }
 };

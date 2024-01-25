@@ -510,4 +510,35 @@ export default {};
   line-height: 150%; /* 24px */
   z-index: 1000;
 }
+
+/* MEDIA QUERY */
+@media (max-width: 425px) {
+  .login-page {
+    width: 550px;
+    height: 1080px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+@media (max-width: 320px) {
+  .login-page {
+    width: 500px;
+    height: 900px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .logo {
+    position: absolute;
+    left: 15%;
+    top: 3%;
+  }
+
+  .sign-up {
+    position: absolute;
+    right: -15%;
+    top: 3%;
+  }
+}
 </style>
