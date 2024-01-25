@@ -9,6 +9,7 @@ class Users {
       try {
         const res = await axios.get(url);
         const data = res.data;
+
         resolve(
           data.map(user => ({
             ...user,

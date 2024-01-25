@@ -423,10 +423,11 @@
               <p class="enter-date">Enter date</p>
               <p class="actions">Actions</p>
             </div>
+
             <div class="user-bottom-lower">
-              <div class="first-item">
+              <div class="first-item ">
                 <p class="loan-number">12345678</p>
-                <a class="user-name" href="/userdetails">Esther Bode</a>
+                <a class="user-name" href="/userdetails">Bose Olaniyi</a>
                 <a class="partners" href="#"><span>Fairmoney</span></a>
                 <p class="agent-text">BFR00001</p>
                 <p class="call-bot">call_bot</p>
@@ -564,6 +565,7 @@ export default {
   async created() {
     try {
       this.users = await Users.getUsers();
+      console.log(this.users);
     } catch (err) {
       this.error = err.message;
     }
@@ -938,9 +940,7 @@ export default {
   height: 40px;
   border-radius: 4px;
   border: 1px solid #f7f7f7;
-  background:
-    url("../assets/images/admin"),
-    lightgray 50% / cover no-repeat;
+  background: url("../assets/images/admin"), lightgray 50% / cover no-repeat;
 }
 
 .admin-name {
