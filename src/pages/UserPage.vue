@@ -1397,7 +1397,4 @@ export default {
   height: 16px;
   fill: #000;
 }
-
-.user-name {
-}
 </style>
