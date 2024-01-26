@@ -433,7 +433,7 @@
                 >
                 <p class="agent-text">{{ user.agent }}</p>
                 <p class="call-bot">call_bot</p>
-                <p class="amounting">₦0.00</p>
+                <p class="amounting">₦{{ user.amountPaid }}</p>
                 <p class="neo-date">Jun 14, 2021 11:53</p>
                 <div class="icon-action">
                   <img class="action-icon" src="../assets/images/setting.svg" alt="" />
@@ -495,7 +495,7 @@ export default {
 <style scoped>
 .userpage-container {
   width: 1440px;
-  height: 1135px;
+  height: 1140px;
   background: #f4f4f4;
   display: grid;
   grid-template-columns: 272px 1fr;
@@ -944,7 +944,7 @@ export default {
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  /* margin-right: 20px; */
+  width: 160px;
 }
 
 .filter-box-4 {
@@ -1396,5 +1396,8 @@ export default {
   width: 16px;
   height: 16px;
   fill: #000;
+}
+
+.user-name {
 }
 </style>

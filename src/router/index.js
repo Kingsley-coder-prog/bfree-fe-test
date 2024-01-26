@@ -11,7 +11,7 @@ const router = createRouter({
       component: LoginPage
     },
     {
-      path: "/userpage",
+      path: "/users",
       component: UserPage
     },
     {
