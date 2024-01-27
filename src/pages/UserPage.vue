@@ -1393,7 +1393,7 @@ export default {
 }
 
 .action-icon {
-  width: 16px;
+  width: 14px;
   height: 16px;
   fill: #000;
 }
