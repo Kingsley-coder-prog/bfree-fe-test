@@ -1367,7 +1367,7 @@ export default {
   font-family: Montserrat;
   font-size: 12px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 100%;
 }
 
