@@ -1394,7 +1394,7 @@ export default {
 
 .action-icon {
   width: 16px;
-  height: 14px;
+  height: 16px;
   fill: #000;
 }
 </style>
