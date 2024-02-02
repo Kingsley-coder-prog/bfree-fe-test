@@ -1387,7 +1387,7 @@ export default {
   padding: 8px;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   border-radius: 16px;
   background: #eaeaea;
 }
