@@ -1388,7 +1388,7 @@ export default {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border-radius: 16px;
+  border-radius: 14px;
   background: #eaeaea;
 }
 
