@@ -1384,7 +1384,7 @@ export default {
 
 .icon-action {
   display: inline-flex;
-  padding: 8px;
+  padding: 6px;
   justify-content: center;
   align-items: center;
   gap: 10px;
