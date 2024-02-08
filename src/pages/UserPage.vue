@@ -1257,7 +1257,7 @@ export default {
   align-items: center;
   justify-items: center;
   width: 1104px;
-  height: 64px;
+  height: 62px;
   flex-shrink: 0;
   background: #00a4db;
 }
