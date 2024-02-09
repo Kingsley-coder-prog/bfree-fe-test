@@ -370,7 +370,7 @@ export default {};
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 6px;
+  gap: 8px;
 }
 
 .top-container,
