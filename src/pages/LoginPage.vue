@@ -377,7 +377,7 @@ export default {};
 .bottom-container {
   display: flex;
   justify-content: space-between;
-  width: 436px;
+  width: 434px;
   align-items: center;
   gap: 16px;
   border-radius: 4px;
