@@ -233,7 +233,7 @@ export default {};
   align-items: center;
   gap: 40px;
   width: 514px;
-  height: 440px;
+  height: 445px;
 }
 
 .card-header h2 {
