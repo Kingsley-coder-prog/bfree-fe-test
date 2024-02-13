@@ -794,7 +794,7 @@ export default {
 
 /* User Details */
 .detail-section {
-  width: 1104px;
+  width: 1102px;
   height: 840px;
   flex-shrink: 0;
   border-radius: 0px 24px 0px 0px;
